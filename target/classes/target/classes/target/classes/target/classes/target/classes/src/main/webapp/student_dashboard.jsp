@@ -59,11 +59,7 @@
                             <div class="container-fluid">
                                 <div class="row align-items-center">
                                     <!-- Logo -->
-                                    <div class="col-xl-2 col-lg-2">
-                                        <div class="logo">
-                                            <a href="index.jsp"><img src="assets/img/logo/logo.png" alt=""></a>
-                                        </div>
-                                    </div>
+                                   <h2 style="color: white">Virtual Learning</h2>
                                     <div class="col-xl-10 col-lg-10">
                                         <div class="menu-wrapper d-flex align-items-center justify-content-end">
                                             <!-- Main-menu -->
@@ -117,49 +113,7 @@
                     </div>
                 </section>
             </main>
-            <footer>
-                <div class="footer-wrappper footer-bg">
-                    <!-- Footer Start-->
-                    <div class="footer-area footer-padding">
-                        <div class="container">
-                            <div class="row justify-content-between">
-                                <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
-                                    <div class="single-footer-caption mb-50">
-                                        <div class="single-footer-caption mb-30">
-                                            <!-- logo -->
-                                            <div class="footer-logo mb-25">
-                                                <a href="index.jsp"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                            </div>
-                                            <div class="footer-tittle">
-                                                <div class="footer-pera">
-                                                    <p>The automated process starts here.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- footer-bottom area -->
-                                <div class="footer-bottom-area">
-                                    <div class="container">
-                                        <div class="footer-border">
-                                            <div class="row d-flex align-items-center">
-                                                <div class="col-xl-12 ">
-                                                    <div class="footer-copy-right text-center">
-                                                        <p>
-                                                            Copyright &copy;
-                                                            <script>
-                                                                document.write(new Date().getFullYear());
-                                                            </script> All rights reserved
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Footer End-->
-                            </div>
-            </footer>
+
             <!-- Scroll Up -->
             <div id="back-top">
                 <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>

@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" import="java.sql.*, java.lang.*"%>
-<%@ page import="main.Model.Student" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" import="java.sql.Connection"%>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="src.main.webapp.Student" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
     <html class="no-js" lang="zxx">
@@ -88,32 +91,25 @@
         </div>
         <!-- Preloader Start-->
 
-
-        <!-- Register -->
-
-        <main class="login-body">
-            <!-- Login Admin -->
+        <main class="login-body" >
             <form class="form-default" name="myform" action="student_register.jsp" method="POST">
 
                 <div class="login-form reg">
-                    <!-- logo-login -->
-                    <div class="logo-login">
-                        <a href="index.jsp"><img src="assets/img/logo/loder.png" alt=""></a>
-                    </div>
+
                     <h2>Register Here</h2>
                     <p>*All fields are mandatory</p>
 
                     <div class="form-input">
-                        <input type="text" name="roll_no" id="roll_no" placeholder="Roll No" pattern="[0]*[1-9]+" title="Enter valid roll number" required>
+                        <input type="text" name="roll_no" id="roll_no" placeholder="Roll No" title="Enter valid roll number" required>
                     </div>
                     <div class="form-input">
                         <input type="text" name="name" id="name" placeholder="Full name" title="Enter First Name and Last Name" required>
                     </div>
                     <div class="form-input">
-                        <input name="email" id="email" placeholder="Email ID" pattern="[a-z0-9.!#$%&_]+@[a-z0-9]+\.[a-z]{2,4}$" title="Must be like : characters@characters.domain" required>
+                        <input name="email" id="email" placeholder="Email ID" title="Must be like : characters@characters.domain" required>
                     </div>
                     <div class="form-input">
-                        <input type="password" id="password" name="password" placeholder="Password" pattern=".*" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <input type="password" id="password" name="password" placeholder="Password"  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                     </div>
                     <div class="form-input">
                         <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" onkeyup="check();" required>
@@ -235,7 +231,7 @@
                     }
                     catch(Exception e)
                     {
-                        out.println(e);
+
                     }
                 %>
             </form>

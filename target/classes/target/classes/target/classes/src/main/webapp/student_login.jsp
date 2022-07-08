@@ -58,10 +58,7 @@
                     }
                 %>
                     <div class="login-form">
-                        <!-- logo-login -->
-                       <%-- <div class="logo-login">
-                            <a href="index.jsp"><img src="assets/img/logo/loder.png" alt=""></a>
-                        </div>--%>
+
                         <h2>Login Here</h2>
                         <div class="form-input">
                             <input type="text" name="roll_no" placeholder="Roll No" required>
@@ -75,24 +72,14 @@
                                     {
                                         out.println(session.getAttribute("Error"));
                                     }
-                            /*		if(session.getAttribute("StudentErrorLogin") != null)
-                                    {
-                                        out.println(session.getAttribute("StudentErrorLogin"));
-                                    }
-                                    if(session.getAttribute("Rejected") != null)
-                                    {
-                                        out.println(session.getAttribute("Rejected"));
-                                    }
-                            */
+
                             %>
                         </p>
                         <div class="form-input pt-30">
                             <input type="submit" name="submit" value="login">
                         </div>
 
-                        <!-- Forgot Password -->
-                        <a href="#" class="forget">Forgot Password</a>
-                        <!-- Forgot Password -->
+
                         <a href="student_register.jsp" class="registration"> You dont't have an account? <b> Register here </b> </a>
                     </div>
 

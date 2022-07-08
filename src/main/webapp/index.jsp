@@ -37,7 +37,7 @@
                 <img src="assets/img/logo/loder.png" alt="">
             </div>
         </div>
-    </div>
+    </div>  az
 </div>
 <!-- Preloader Start -->
 <header>

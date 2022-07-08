@@ -95,10 +95,7 @@
             <form class="form-default" name="myform" action="student_register.jsp" method="POST">
 
                 <div class="login-form reg">
-                    <!-- logo-login -->
-<%--                    <div class="logo-login">--%>
-<%--                        <a href="index.jsp"><img src="assets/img/logo/loder.png" alt=""></a>--%>
-<%--                    </div>--%>
+
                     <h2>Register Here</h2>
                     <p>*All fields are mandatory</p>
 

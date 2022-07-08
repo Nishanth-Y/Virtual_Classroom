@@ -37,7 +37,7 @@
                 <img src="assets/img/logo/loder.png" alt="">
             </div>
         </div>
-    </div>
+    </div>  az
 </div>
 <!-- Preloader Start -->
 <header>
@@ -50,7 +50,9 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                                <a href="index.jsp"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.jsp">
+                                    <h2 style="color: white">Virtual Classroom</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10">
@@ -62,14 +64,13 @@
                                             <li><a href="#">Login</a>
                                                 <ul class="submenu">
                                                     <li><a href="student_login.jsp">Student</a></li>
-                                                    <li><a href="faculty_login.jsp">Teacher</a></li>
                                                     <li><a href="admin_login.jsp">Admin</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Register</a>
                                                 <ul class="submenu">
                                                     <li><a href="student_register.jsp">Student</a></li>
-                                                    <li><a href="faculty_register.jsp">Teacher</a></li>
+
                                                 </ul>
                                             </li>
                                         </ul>
@@ -98,7 +99,7 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="hero__caption">
-                                <h1 data-animation="fadeInLeft" data-delay="0.2s">Virtual<br>Learning</h1>
+                                <h1 data-animation="fadeInLeft" data-delay="0.2s">Virtual<br>Classroom</h1>
                                 <p data-animation="fadeInLeft" data-delay="0.4s">Teaching tool to assist each and every student to learn in an interactive manner.</p>
                             </div>
                         </div>
@@ -119,7 +120,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo mb-25">
-                                    <a href="index.jsp"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                    <a href="index.jsp"><span>Virtual Classroom</span></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
@@ -129,26 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- footer-bottom area -->
-                    <div class="footer-bottom-area">
-                        <div class="container">
-                            <div class="footer-border">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-xl-12 ">
-                                        <div class="footer-copy-right text-center">
-                                            <p>
-                                                Copyright &copy;
-                                                <script>
-                                                    document.write(new Date().getFullYear());
-                                                </script> All rights reserved
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer End-->
+
                 </div>
             </div>
         </div>

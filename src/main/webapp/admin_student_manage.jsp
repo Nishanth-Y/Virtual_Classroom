@@ -1,4 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" import="java.sql.*"%>
+<%@ page import="src.main.webapp.Student" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Arrays" %>
+<%@ page import="src.main.webapp.MergeSort" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html class="no-js" lang="zxx">
@@ -94,7 +98,7 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="hero__caption">
-                                <h1 data-animation="fadeInLeft" data-delay="0.2s">Student<br>Requests</h1>
+                                <h1 data-animation="fadeInLeft" data-delay="0.2s">Student<br>Management</h1>
                                 <p data-animation="fadeInLeft" data-delay="0.4s">Accept or Decline Student Registration Requets.</p>
                             </div>
                         </div>
@@ -108,7 +112,7 @@
     <h3 class="mb-30 request">Requests:</h3>
     <div class="progress-table-wrap">
         <div class="progress-table">
-            <form class="form-default" action="admin_student_requests_action.jsp" method="POST">
+            <form class="form-default" action="admin_student_manage.jsp" method="POST">
                 <div class="table-head">
                     <div class="roll_no">Roll Number</div>
                     <div class="name">Name</div>
@@ -139,36 +143,51 @@
                 <div class="table-row">
                     <div class="name">
                         <%
-                            out.println("No Pending request");
+                            out.println("No Students");
                         %>
                     </div>
                 </div>
                 <%
                     }
 
+                    ArrayList<Student> students = new ArrayList<>();
                     while(rs.next())
                     {
+                        students.add(new Student(String.valueOf(rs.getInt(1)), rs.getString(2), rs.getString(3)+ " " + rs.getString(4)+" " +rs.getString(5), String.valueOf(rs.getInt(1))));
+                    }
+
+                    MergeSort mergeSortObj = new MergeSort();
+                    int[] rollNo = new int[students.size()];
+                    for(int i = 0; i < students.size(); i++) {
+                        rollNo[i] = Integer.parseInt(students.get(i).getRollNo());
+                    }
+                    mergeSortObj.sort(rollNo, 0, rollNo.length-1);
+                    System.out.println(Arrays.toString(rollNo));
+                    ArrayList<Student> tempStudents = new ArrayList<>();
+                    for(int roll : rollNo) {
+                        tempStudents.add(Student.getByRoll(students, String.valueOf(roll)));
+                    }
+                      for(Student student : tempStudents){
                 %>
                 <div class="table-row">
                     <div class="roll_no">
-                        <%= rs.getInt(1) %>
+                        <%= student.getRollNo() %>
                     </div>
                     <div class="name">
-                        <%= rs.getString(2) %>
+                        <%= student.getName() %>
                     </div>
                     <div class="name">
-                        <%= rs.getString(3) %>
-                        <%= rs.getString(4) %>
-                        <%= rs.getString(5) %>
+                        <%= student.getDegree() %>
+
                     </div>
                     <div class="accept">
-                        <input type="checkbox" name="ad" value="<%= rs.getInt(1)%>">
+                        <input type="checkbox" name="ad" value="<%= student.getValue()%>">
                     </div>
+                    <br>
                 </div>
                 <%
-                        }
 
-                        // close the connection
+                    }
                         stmt.close();
                         con.close();
                     }

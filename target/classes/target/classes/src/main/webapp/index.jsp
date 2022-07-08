@@ -37,7 +37,7 @@
                 <img src="assets/img/logo/loder.png" alt="">
             </div>
         </div>
-    </div>
+    </div>  az
 </div>
 <!-- Preloader Start -->
 <header>
@@ -51,7 +51,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
                                 <a href="index.jsp">
-                                    <h2 style="color: white">Virtual Learning</h2>
+                                    <h2 style="color: white">Virtual Classroom</h2>
                                 </a>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="hero__caption">
-                                <h1 data-animation="fadeInLeft" data-delay="0.2s">Virtual<br>Learning</h1>
+                                <h1 data-animation="fadeInLeft" data-delay="0.2s">Virtual<br>Classroom</h1>
                                 <p data-animation="fadeInLeft" data-delay="0.4s">Teaching tool to assist each and every student to learn in an interactive manner.</p>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo mb-25">
-                                    <a href="index.jsp"><span>Virtual Learning</span></a>
+                                    <a href="index.jsp"><span>Virtual Classroom</span></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
